@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .blue {
+        background: #1f2937;
+      }
+
+      .white {
+        background: #fff;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+      }
+
+      .nav-container {
+        padding: 1em 10rem;
+        margin: 0;
+      }
+
+      .nav-container,
+      .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .nav-button {
+        background: none;
+        border: none;
+      }
+
+      button {
+        transition: 0.4s;
+        opacity: 0.9;
+      }
+
+      button:hover {
+        filter: brightness(110%);
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .nav-button:hover {
+        color: #fff;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .nav-logo {
+        font-size: 24px;
+        font-weight: bolder;
+        color: #f9faf8;
+      }
+
+      .nav-link {
+        color: #f2f2f2;
+        padding: 8px 16px;
+      }
+
+      .landing-splash {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 6rem 10rem;
+      }
+
+      .splash-text-header {
+        font-size: 48px;
+        font-weight: bolder;
+        color: #f9faf8;
+      }
+
+      .splash-text-body {
+        font-size: 18px;
+        color: #e5e7eb;
+      }
+
+      .splash-text-button {
+        background-color: #3882f6;
+        color: #fff;
+        padding: 0.5rem 2rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+
+      .placeholder-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 200px;
+        background-color: gray;
+        border-radius: 8px;
+      }
+
+      .placeholder-image > p {
+        text-align: center;
+        color: #fff;
+      }
+
+      .card-section {
+        padding: 3rem 16rem;
+      }
+
+      .card-section-header {
+        font-size: 36px;
+        font-weight: 700;
+        color: #1f2937;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .cards-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .borderless-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+      }
+
+      .card-image {
+        height: 10rem;
+        width: 10rem;
+        border: 4px solid #3882f6;
+        border-radius: 16px;
+        margin-bottom: 1rem;
+      }
+
+      .card-text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      .quote-section {
+        padding: 6rem 16rem;
+        background-color: #e5e7eb;
+      }
+
+      .quote {
+        font-size: 36px;
+        font-weight: 400;
+        font-style: italic;
+        color: #1f2937;
+      }
+
+      .quote-author {
+        text-align: end;
+      }
+
+      .cta-section {
+        padding: 6rem 10rem;
+      }
+
+      .cta-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 4rem;
+        background-color: #3882f6;
+        color: #fff;
+        border-radius: 16px;
+      }
+
+      .cta-button {
+        padding: 0.5rem 2rem;
+        border: 2px solid #fff;
+        border-radius: 8px;
+        background: none;
+        color: #fff;
+        font-weight: 600;
+      }
+
+      footer {
+        padding: 2rem;
+      }
+
+      footer > p {
+        color: #f5f5f5;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="blue">
+    <!-- Navbar  -->
+    <header class="nav-container">
+      <button class="nav-logo nav-button">Header Logo</button>
+      <nav class="main-nav">
+        <button class="nav-link nav-button">header link one</button>
+        <button class="nav-link nav-button">header link two</button>
+        <button class="nav-link nav-button">header link three</button>
+      </nav>
+    </header>
+    <!-- Splash section -->
+    <section class="landing-splash">
+      <div class="splash-text-container">
+        <h1 class="splash-text-header">This website is awesome</h1>
+        <p class="splash-text-body">
+          this website has some subtext that goes here under the main title.
+          It's smaller font and the color is lower contrast
+        </p>
+        <button class="splash-text-button">Sign up</button>
+      </div>
+      <figure>
+        <div class="placeholder-image">
+          <p>this is a placeholder for an image</p>
+        </div>
+      </figure>
+    </section>
+    <!-- card section -->
+    <section class="card-section white">
+      <h1 class="card-section-header">Some random information</h1>
+      <div class="cards-container">
+        <div class="borderless-card">
+          <div class="card-image"></div>
+          <h2 class="card-text">
+            this is some subtext under an illustration or image
+          </h2>
+        </div>
+        <div class="borderless-card">
+          <div class="card-image"></div>
+          <h2 class="card-text">
+            this is some subtext under an illustration or image
+          </h2>
+        </div>
+        <div class="borderless-card">
+          <div class="card-image"></div>
+          <h2 class="card-text">
+            this is some subtext under an illustration or image
+          </h2>
+        </div>
+        <div class="borderless-card">
+          <div class="card-image"></div>
+          <h2 class="card-text">
+            this is some subtext under an illustration or image
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="quote-section">
+      <h1 class="quote">
+        this is an inspiring quote, or a testimonial from a customer. Maybe it's
+        just filling up space or maybe people will actually read it. Who knows?
+        All I know is that it looks nice.
+      </h1>
+      <h2 class="quote-author">-Thor, God of Thunder</h2>
+    </section>
+    <section class="cta-section white">
+      <div class="cta-container">
+        <div class="cta-text">
+          <h2>Call to action! It's time!</h2>
+          <p>
+            Sign up for our product by clicking that button right over there!
+          </p>
+        </div>
+        <button class="cta-button">Sign up</button>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright The Odin Project 2021</p>
+    </footer>
+  </body>
+</html>
